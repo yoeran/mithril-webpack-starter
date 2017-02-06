@@ -1,0 +1,40 @@
+{
+  "name": "mithril-webpack-starter",
+  "description": "Webpack setup for writing Mitrhil apps",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "Yoeran Luteijn",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yoeran/mithril-webpack-starter"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --hot --inline",
+    "build": "rimraf dist && webpack",
+    "copy:stuff": "mv dist/*.eot dist/static/css/ && mv dist/*.woff* dist/static/css/ && mv dist/*.svg dist/static/css/ && mv dist/*.ttf dist/static/css/"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-transform-react-jsx": "^6.22.0",
+    "babel-preset-es2015": "^6.22.0",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.17.0",
+    "node-sass": "^4.2.0",
+    "postcss-loader": "^1.1.1",
+    "rimraf": "^2.5.2",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-merge": "^2.4.0"
+  },
+  "dependencies": {
+    "mithril": "^1.0.0"
+  }
+}
