@@ -14,6 +14,9 @@
     "lint": "./node_modules/.bin/eslint .",
     "copy:stuff": "mv dist/*.eot dist/static/css/ && mv dist/*.woff* dist/static/css/ && mv dist/*.svg dist/static/css/ && mv dist/*.ttf dist/static/css/"
   },
+  "pre-push": [
+    "lint"
+  ],
   "devDependencies": {
     "autoprefixer": "^6.3.6",
     "babel-core": "^6.22.1",
@@ -32,6 +35,7 @@
     "html-webpack-plugin": "^2.17.0",
     "node-sass": "^4.2.0",
     "postcss-loader": "^1.1.1",
+    "pre-push": "^0.1.1",
     "rimraf": "^2.5.2",
     "sass-loader": "^4.0.0",
     "style-loader": "^0.13.1",
