@@ -8,6 +8,7 @@ A simple Webpack setup for writing [Mithril](http://mithril.js.org/) apps:
 * Dev server with live reloading, HMR
 * Support for CSS/SCSS (with Autoprefixer), image assets
 * Bundling and minification for deployment
+* Lints all your JS before allowing you to push your code (skip this by adding `--no-verify` to your push command, not recommended though)
 
 
 ### Serve locally:
