@@ -1,6 +1,6 @@
 {
   "name": "mithril-webpack-starter",
-  "description": "Webpack setup for writing Mitrhil apps",
+  "description": "Webpack setup for writing Mithril apps",
   "version": "0.0.1",
   "license": "MIT",
   "author": "Yoeran Luteijn",

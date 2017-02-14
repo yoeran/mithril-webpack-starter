@@ -12,5 +12,6 @@
     "quotes": ["error", "double"]
   },
   "globals" : {
+    "m": true
   }
 }

@@ -1,7 +1,5 @@
-import m from 'mithril';
-
 // Root component
-import { Example } from './components/Example/Example';
+import { Example } from "./components/Example/Example";
 
 // Global styles
 import "./static/styles/main.scss";
