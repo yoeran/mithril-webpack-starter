@@ -1,7 +1,7 @@
 // Root component
-import { Example } from "./components/Example/Example";
+import { App } from "./components/App/App";
 
 // Global styles
 import "./static/styles/main.scss";
 
-m.mount(document.body, Example);
+m.mount(document.body, App);
