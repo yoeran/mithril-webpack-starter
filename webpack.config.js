@@ -5,7 +5,7 @@ var HtmlWebpackPlugin = require("html-webpack-plugin");
 var autoprefixer = require("autoprefixer");
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var CopyWebpackPlugin = require("copy-webpack-plugin");
-var entryPath = path.join(__dirname, "src/bootstrap.jsx");
+var entryPath = path.join(__dirname, "src/bootstrap.js");
 var outputPath = path.join(__dirname, "dist");
 
 console.log("WEBPACK GO!");
@@ -19,11 +19,11 @@ var commonConfig = {
 
   output: {
     path: outputPath,
-    filename: `/static/js/${outputFilename}`
+    filename: `static/js/${outputFilename}`
   },
 
   resolve: {
-    extensions: ["", ".js", ".jsx"]
+    extensions: ["", ".js"]
   },
 
   module: {
