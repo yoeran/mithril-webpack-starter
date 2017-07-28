@@ -48,7 +48,11 @@ var commonConfig = {
     }),
     new webpack.ProvidePlugin({
       "m": "mithril"
-    })
+    }),
+
+    // Going to use momentjs? Then you might want to uncomment this line
+    // https://webpack.js.org/plugins/ignore-plugin/#ignore-moment-locales
+    // new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/)
   ],
 
   postcss: [ autoprefixer({ browsers: ["last 2 versions"] }) ]
@@ -127,8 +131,8 @@ if (TARGET_ENV === "production") {
       // minify & mangle JS/CSS
       new webpack.optimize.UglifyJsPlugin({
         minimize: true,
-        compressor: { warnings: false }
-        // mangle:  true
+        compressor: { warnings: false },
+        mangle:  true
       })
     ]
 
